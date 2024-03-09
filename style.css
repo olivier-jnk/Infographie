@@ -64,3 +64,97 @@ table {
 	display: flex;
 	flex-direction: row;
 }
+
+/* //Section2// */
+
+.client-collaboration{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.client-collaboration .illustration img{
+	max-height: 10vh;
+	min-height: 10vh;
+}
+
+.client-collaboration .collaboration{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.client-collaboration .collaboration .maj-points{
+	display: flex;
+	flex-direction: column;
+	gap: 10%;
+}
+
+.client-collaboration .collaboration .maj-points .points{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10%;
+}
+
+/* Research, inspiration, Planning */
+
+
+.research-inspiration-planning .f-part{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	height: 80%;
+	background: #505CAB;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+.research-inspiration-planning .f-part .personas{
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}
+
+.research-inspiration-planning .f-part .personas img{
+	min-width: 30vw;
+}
+
+/* secondPart */
+
+.research-inspiration-planning .s-part{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 100%;
+	height: 80%;
+	background: #9F83BB;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+.research-inspiration-planning .s-part .bloc{
+	background: black;
+	display: flex;
+	flex-direction: row;
+}
+
+.research-inspiration-planning .s-part .bloc img{
+	min-width: 10vw;
+}
+
+.research-inspiration-planning .s-part .bloc .text-content .tip{
+	display: flex;
+}
+.research-inspiration-planning .s-part .bloc .text-content .tip img{
+	max-width: 5vw;
+}

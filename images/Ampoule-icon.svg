@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f6eb;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: .4;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #e8e6d9;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #ffee8d;
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="16"/>
+      <feFlood flood-color="#ffee8d" flood-opacity=".81"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="AmpouleIcone">
+    <rect class="cls-2" x="9.34" y="32.38" width="11.87" height="6.01"/>
+    <rect class="cls-4" x="9.34" y="25.52" width="11.87" height="6.86"/>
+    <rect class="cls-5" x="13.36" y="11.33" width="3.96" height="6.06"/>
+    <rect class="cls-3" x="11.28" y="19.39" width="1" height="6.13"/>
+    <rect class="cls-3" x="19.29" y="19.39" width="1" height="6.13"/>
+    <rect class="cls-3" x="9.34" y="17.35" width="4.02" height="2.04"/>
+    <rect class="cls-3" x="17.32" y="17.35" width="4.02" height="2.04"/>
+    <rect class="cls-3" x="10.33" y="16.36" width="3.03" height="2.04"/>
+    <rect class="cls-3" x="17.32" y="16.4" width="3.03" height="2.04"/>
+    <rect class="cls-3" x="13.36" y="17.38" width="3.96" height="1.02"/>
+    <path id="AmpouleSpherePrincipale" class="cls-1" d="m15.27,1.6C8.3,1.6,2.65,7.25,2.65,14.23c0,4.95,2.85,9.21,6.99,11.29h11.07v.1c4.25-2.03,7.19-6.36,7.19-11.38,0-6.97-5.65-12.63-12.63-12.63Z"/>
+  </g>
+</svg>
