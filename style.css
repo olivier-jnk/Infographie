@@ -73,6 +73,17 @@ table {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	background: #9F83BB;
+}
+
+.client-collaboration h3{
+	display: flex;
+	justify-content: center;
+}
+
+.client-collaboration .bloc .points{
+	display: flex;
+	justify-content: center;
 }
 
 .client-collaboration .illustration img{
@@ -80,10 +91,17 @@ table {
 	min-height: 10vh;
 }
 
-.client-collaboration .collaboration{
+.client-collaboration .illustration-two .content{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+
+}
+
+.client-collaboration .collaboration{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
 }
 
 .client-collaboration .collaboration .maj-points{
@@ -130,7 +148,8 @@ table {
 
 .research-inspiration-planning .s-part{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	/* a changer pour la version pc */
 	gap: 10px;
 	width: 100%;
 	height: 80%;
@@ -157,4 +176,221 @@ table {
 }
 .research-inspiration-planning .s-part .bloc .text-content .tip img{
 	max-width: 5vw;
+}
+.research-inspiration-planning .s-part .bloc .text-content .tip .icon{
+	background: #A480C1;
+	border-radius: 50%;
+}
+
+/* //Section 3// */
+
+.design{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* PAGE illustration */
+.design .step-one{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design .step-one .page-illustration{
+	background: #FECF75;
+	min-width: 40vw;
+	max-width: 60vw;
+	padding: 2%;
+}
+
+.design .step-one .page-illustration .page{
+	display: flex;
+	flex-direction: column;
+}
+
+/* base */
+.design .step-one .page-illustration .page .base{
+	display: flex;
+	flex-direction: row;
+	background: #BFC2C9;
+	justify-content: space-between;
+	padding: 2%;
+}
+
+.design .step-one .page-illustration .page .base .control{
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}
+.design .step-one .page-illustration .page .base .control .round{
+	width: 1vw;
+	height: 0.5vh;
+	border-radius: 50%;
+}
+.design .step-one .page-illustration .page .base .control .round-red{
+	background: #FF6E72;
+}
+.design .step-one .page-illustration .page .base .control .round-yellow{
+	background: #F4D36C;
+}
+.design .step-one .page-illustration .page .base .control .round-green{
+	background: #23BB6F;
+}
+.design .step-one .page-illustration .page .base .nav{
+	background: #8C949A ;
+	/* mieux background ou bg-color dans ce cas ? */
+	width: 70%;
+	/* border-radius: 10%; */
+}
+.design .step-one .page-illustration .page .base .cube{
+	background: #758283;
+	width: 5%;
+	border-radius: 10%;
+}
+
+.page .full-content{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+    background: white;
+	min-height: 40vh;
+}
+
+.page .full-content .all{
+	display: flex;
+	flex-direction: column;
+	/* min-height: 40vh; */
+	padding: 5%;
+    width: 90%;
+	gap: 5%;
+	/* ? */
+}
+
+.page .full-content .all .header{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background: #758283;
+	/* Pas la bonne couleur */
+	height: 20%;
+    padding: 6%;
+	
+}
+
+.page .full-content .all .header .logo{
+	background-color: white;
+	width: 5vw;
+}
+
+.page .full-content .all .bar{
+	background: grey;
+	height: 10%;
+}
+
+/* Aside */
+.page .full-content .all aside{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 5%;
+}
+
+.page .full-content .all aside .search-field{
+	background: orange;
+	width: 100%;
+	height: 1vh;
+	border-radius: 5%;
+}
+
+
+.page .full-content .all aside .content-one{
+	background: grey;
+	height: 4vh;
+}
+
+.page .full-content .all aside .social-sharing-buttons{
+	display: flex;
+	gap: 5%;
+}
+
+.page .full-content .all aside .button{
+	background: orange;
+	height: 2vh;
+	width: 20%;
+}
+
+
+.page .full-content .all aside .content-two{
+	background: grey;
+	height: 3vh;
+}
+
+.page .full-content .all aside .nav-system{
+	background: orange;
+	height: 2.5vh;
+
+}
+
+
+/* MajContent */
+/* Systeme de aside fonctionne pas, faire un groupe qui regroupe les 2 et faire flexD = row ou réparer le aside */
+.page .full-content .all .contact-information{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.page .full-content .all .contact{
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}
+
+.page .full-content .all .contact .pp{
+	background: orange;
+	height: 2.5vh;
+	border-radius:30%;
+	width: 20%;
+
+}
+
+.page .full-content .all .contact .infos{
+	background: orange;
+	height: 2.5vh;
+	/* border-radius: 30%; */
+	width: 80%;
+}
+
+.page .full-content .all .content-main{
+	background: orange;
+	height: 20vh;
+	width: 100%;
+}
+
+.page .full-content .all .footer{
+	background: orange;
+	height: 5vh;
+	width: 100%;
+}
+
+.page .full-content .scroll{
+	height: 55vh;
+	/* Le mettre à 100% de la taille d'un parent qui ordone la taille de la zone de contenu. */
+	width: 1vw;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.page .full-content .scroll .scroll-bar{
+	background: grey;
+	height: 100%;
+	position: relative;
+}
+.page .full-content .scroll .scroll-bar .pos{
+	position: absolute;
+	height: 30%;
+	background: yellow ;
 }
