@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.11 66.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #c5c9bf;
+      }
+
+      .cls-3 {
+        fill: #aac876;
+      }
+
+      .cls-4 {
+        fill: #a7b3c9;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="FormIcon">
+      <rect class="cls-1" y="5.58" width="47.11" height="61.02" rx="3.8" ry="3.8"/>
+      <rect class="cls-5" x="2.83" y="10.13" width="41.11" height="52.81"/>
+      <rect class="cls-4" x="6.55" y="7.07" width="34" height="6.13"/>
+      <path class="cls-4" d="M20.74,7.07v-2.91h4.21v2.91h4.02S30.4-.21,22.62,0s-6.11,7.06-6.11,7.06h4.23Z"/>
+      <rect class="cls-2" x="8.06" y="19.24" width="30.26" height="1.74"/>
+      <rect class="cls-2" x="8.43" y="44.35" width="30.26" height="1.74"/>
+      <rect class="cls-2" x="8.43" y="51.64" width="30.26" height="1.74"/>
+      <path id="CAse" class="cls-2" d="M29.82,25.23h-12.53c-.65,0-1.17.52-1.17,1.17v12.53c0,.65.52,1.17,1.17,1.17h12.53c.65,0,1.17-.52,1.17-1.17v-12.53c0-.65-.52-1.17-1.17-1.17ZM29.13,37.11c0,.52-.42.94-.94.94h-9.23c-.52,0-.94-.42-.94-.94v-8.89c0-.52.42-.94.94-.94h9.23c.52,0,.94.42.94.94v8.89Z"/>
+      <polygon id="tick" class="cls-3" points="18.06 34.09 20.83 37.01 28.88 26.75 30.32 27.96 21.26 39.96 16.79 35.62 18.06 34.09"/>
+    </g>
+  </g>
+</svg>

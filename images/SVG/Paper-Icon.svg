@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cecece;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #c9c6c1;
+      }
+
+      .cls-3 {
+        fill: #ddd;
+      }
+
+      .cls-4 {
+        fill: #ffcb6e;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Document-Icon_a_revoir_" data-name="Document-Icon(a revoir)">
+    <polygon class="cls-5" points="24.26 22.45 24.26 3.54 5.74 3.54 5.74 26.46 20.43 26.46 24.26 22.45"/>
+    <rect class="cls-4" x="7.88" y="5.62" width="6" height="3.96"/>
+    <rect class="cls-3" x="17.9" y="5.62" width="4.98" height="2.84"/>
+    <polygon class="cls-3" points="8.87 11.59 22.88 11.59 22.88 23.62 8.87 23.46 8.87 11.59"/>
+    <rect class="cls-2" x="9.57" y="12.45" width="10.85" height=".57"/>
+    <rect class="cls-2" x="9.57" y="14.25" width="10.85" height=".57"/>
+    <rect class="cls-2" x="9.57" y="16.01" width="10.85" height=".57"/>
+    <polyline class="cls-1" points="20.43 26.46 20.78 21.61 24.26 22.45"/>
+  </g>
+</svg>

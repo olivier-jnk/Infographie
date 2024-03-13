@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 171 164">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#outer-glow-2);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="16"/>
+      <feFlood flood-color="#ffee8d" flood-opacity=".81"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="16"/>
+      <feFlood flood-color="#ffee8d" flood-opacity=".81"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="Etoile-_Star_-_icon" data-name="Etoile- Star - icon">
+      <polygon class="cls-3" points="71.17 76.79 75.6 48.53 89.72 73.72 113.89 75.43 92.53 87.34 88.87 115.94 74.06 90.91 48.53 88.53 71.17 76.79"/>
+      <polygon class="cls-1" points="110.96 57.37 115.87 50.98 116.13 59.18 122.11 62.94 115.04 62.94 110.28 69.52 109.82 61.27 103.59 57.15 110.96 57.37"/>
+      <circle class="cls-2" cx="50.28" cy="77.47" r="1.23"/>
+      <circle class="cls-2" cx="66.79" cy="96.6" r="1.23"/>
+      <circle class="cls-2" cx="102.35" cy="64.04" r="1.23"/>
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto/Roboto-Regular.ttf')
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +22,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+p, h1, h2, h3, h4, span {
+	font-family: Roboto;
 }
 
 article, aside, details, figcaption, figure, 
@@ -48,13 +57,33 @@ table {
 	border-spacing: 0;
 }
 
+/* icon */
+
+.icon{
+	width: 100px; 
+  	height: 100px;
+  	border-radius: 50%; 
+	background-color: #8ebb63;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+}
+
+.icon img{
+	min-width: 80%;
+	min-height: 80%;
+}
+
+/* -> Permet d'éviter la répétition. */
+
 /*bg-cadrillage*/
 .introduction {
 	background-image: linear-gradient(#EDECE1 3px, transparent 2px),
 	linear-gradient(90deg, #EDECE1 3px, transparent 2px);
     background-size: 25px 25px;
 	background-color: #F7F6EB;
-    width: 100%;
+    /* width: 100%; */
 	/* 89% mobile / 100% PC ? */
     padding: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,6 +97,7 @@ table {
 /* //Section2// */
 
 .client-collaboration{
+	padding: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -87,8 +117,9 @@ table {
 }
 
 .client-collaboration .illustration img{
-	max-height: 10vh;
-	min-height: 10vh;
+	/* max-height: 10vh;
+	min-height: 10vh; */
+	min-width: 80vw;
 }
 
 .client-collaboration .illustration-two .content{
@@ -107,7 +138,11 @@ table {
 .client-collaboration .collaboration .maj-points{
 	display: flex;
 	flex-direction: column;
-	gap: 10%;
+}
+
+.client-collaboration .collaboration .maj-points h3{
+	color: white;
+	font-weight: 900;
 }
 
 .client-collaboration .collaboration .maj-points .points{
@@ -117,6 +152,77 @@ table {
 	gap: 10%;
 }
 
+.client-collaboration .collaboration .maj-points .points .point{
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+
+.client-collaboration .collaboration .maj-points .icon{
+	/* background-color: #314d58;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center; */
+	width: 40px; 
+	/* vh et vw pour responsive */
+  	height: 40px;
+  	border-radius: 50%; 
+	background-color: #314d58;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+}
+
+.client-collaboration .collaboration .maj-points .icon img{
+	min-width: 80%;
+	max-width: 80%;
+}
+
+
+.client-collaboration .collaboration .illustration-two{
+	gap: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-collaboration .collaboration .illustration-two .content{
+	display: flex;
+	background: black;
+	padding: 5%;
+	gap: 5%;
+	/* justify-content: space-between; */
+}
+
+.client-collaboration .collaboration .illustration-two .content p{
+	color: #ffda64;
+	font-weight: 900;
+}
+
+.client-collaboration .collaboration .illustration-two .content p .thin{
+	color: white;
+	font-weight: 400;
+}
+
+.client-collaboration .collaboration .illustration-two .img-content{
+	height: 40px;
+  	border-radius: 50%; 
+	background-color: #fbce5a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow: hidden;  */
+	/* position: relative; */
+}
+
+.client-collaboration .collaboration .illustration-two .img-content img{
+	/* position: absolute; */
+	min-width: 80%;
+	min-height: 120%;
+}
+
+
+
 /* Research, inspiration, Planning */
 
 
@@ -124,7 +230,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 100%;
+	/* width: 100%; */
 	height: 80%;
 	background: #505CAB;
 	display: flex;
@@ -132,12 +238,13 @@ table {
 	justify-content: center;
 	color: #fff;
 	font-size: 24px;
+	padding: 4%;
 }
 
 .research-inspiration-planning .f-part .personas{
 	display: flex;
-	flex-direction: row;
-	gap: 5%;
+	flex-direction: column;
+    gap: 15px;
 }
 
 .research-inspiration-planning .f-part .personas img{
@@ -175,12 +282,23 @@ table {
 	display: flex;
 }
 .research-inspiration-planning .s-part .bloc .text-content .tip img{
-	max-width: 5vw;
+	/* max-width: 5vw; */
+	min-width: 100%;
+	min-height: 100%;
 }
 .research-inspiration-planning .s-part .bloc .text-content .tip .icon{
-	background: #A480C1;
-	border-radius: 50%;
+	/* background: #A480C1;
+	border-radius: 50%; */
+	width: 100px; 
+  	height: 50px;
+  	border-radius: 50%; 
+	background-color: #A480C1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
 }
+
 
 /* //Section 3// */
 
@@ -260,11 +378,18 @@ table {
 .page .full-content .all{
 	display: flex;
 	flex-direction: column;
+	/* -> modifier pour séparer les 2 parties  */
 	/* min-height: 40vh; */
 	padding: 5%;
     width: 90%;
 	gap: 5%;
 	/* ? */
+}
+
+.page .full-content .all .divided{
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
 }
 
 .page .full-content .all .header{
@@ -289,14 +414,15 @@ table {
 }
 
 /* Aside */
-.page .full-content .all aside{
+.page .full-content .all .second-content{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	padding: 5%;
+	/* padding: 5%; */
+	width: 60%;
 }
 
-.page .full-content .all aside .search-field{
+.page .full-content .all .second-content .search-field{
 	background: orange;
 	width: 100%;
 	height: 1vh;
@@ -304,34 +430,33 @@ table {
 }
 
 
-.page .full-content .all aside .content-one{
+.page .full-content .all .second-content .content-one{
 	background: grey;
 	height: 4vh;
 }
 
-.page .full-content .all aside .social-sharing-buttons{
+.page .full-content .all .second-content .social-sharing-buttons{
 	display: flex;
 	gap: 5%;
 }
 
-.page .full-content .all aside .button{
+.page .full-content .all .second-content .button{
 	background: orange;
 	height: 2vh;
 	width: 20%;
 }
 
 
-.page .full-content .all aside .content-two{
+.page .full-content .all .second-content .content-two{
 	background: grey;
 	height: 3vh;
 }
 
-.page .full-content .all aside .nav-system{
+.page .full-content .all .second-content .nav-system{
 	background: orange;
 	height: 2.5vh;
 
 }
-
 
 /* MajContent */
 /* Systeme de aside fonctionne pas, faire un groupe qui regroupe les 2 et faire flexD = row ou réparer le aside */
@@ -339,6 +464,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	width: 35%;
 }
 
 .page .full-content .all .contact{
@@ -364,7 +490,7 @@ table {
 
 .page .full-content .all .content-main{
 	background: orange;
-	height: 20vh;
+	height: 12vh;
 	width: 100%;
 }
 
@@ -394,3 +520,100 @@ table {
 	height: 30%;
 	background: yellow ;
 }
+
+/* Step-2 */
+
+.step-two{
+	display: flex;
+	flex-direction: row;
+	padding: 4%;
+	gap: 10px;
+}
+
+.step-two .presentation{
+	display: flex;
+	flex-direction: column;
+	padding: 4%;
+	gap: 10px;
+}
+
+.step-two .presentation h3{
+	background: #515cac;
+	color: white;
+	padding: 3%;
+}
+.step-two .presentation .steps{
+	display: flex;
+}
+
+.step-two .presentation .steps .icons{
+
+}
+
+.step-two .presentation .steps .icons .icon{
+	background: #ffcf62 ;
+}
+
+
+.step-two .presentation .steps .icons .icon img{
+	min-width: 50%;
+	min-height: 50%;
+}
+
+
+
+/* Step-3 */
+
+.design .step-three {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 4%;
+}
+
+.design .step-three .blocks{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.design .step-three .blocks .block{
+	background-color: #9ccc6c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5%;
+	gap: 10px;
+	min-width: 60vw;
+	max-width: 60vw;
+}
+
+.design .step-three .blocks .block .icon{
+	width: 100px; 
+  	height: 100px;
+  	border-radius: 50%; 
+	background-color: #8ebb63;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+}
+
+/* .design .step-three .blocks .block .round{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #8fbb62;
+	min-width: 5vw;
+	min-height: 5vh;
+} */
+
+.design .step-three .blocks .block .icon img{
+	max-width: 80%;
+	max-height: 80%;
+}
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e99526;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f45f55;
+      }
+
+      .cls-3 {
+        fill: #000;
+      }
+
+      .cls-4 {
+        fill: #a05400;
+      }
+
+      .cls-5 {
+        fill: #ffd563;
+      }
+    </style>
+  </defs>
+  <g id="CBs">
+    <g id="CBrouge">
+      <rect class="cls-2" x="3.3" y="6.83" width="22" height="15.96" rx="1.96" ry="1.96" transform="translate(-3.93 5.25) rotate(-18.34)"/>
+      <rect class="cls-3" x="2.36" y="10.94" width="22" height="2.04" transform="translate(-3.08 4.81) rotate(-18.34)"/>
+      <rect class="cls-1" x="17.48" y="13.51" width="1.91" height="2.96" transform="translate(-3.78 6.56) rotate(-18.34)"/>
+      <rect class="cls-4" x="21.3" y="12.23" width="2.04" height="2.96" transform="translate(-3.18 7.72) rotate(-18.34)"/>
+    </g>
+    <g id="CBorange">
+      <rect class="cls-5" x="6.14" y="9.75" width="22" height="15.96" rx="1.96" ry="1.96"/>
+      <rect class="cls-3" x="6.14" y="13.71" width="22" height="2.04"/>
+      <rect class="cls-1" x="20.05" y="17.73" width="1.91" height="2.96"/>
+      <rect class="cls-4" x="24.07" y="17.73" width="2.04" height="2.96"/>
+    </g>
+  </g>
+</svg>

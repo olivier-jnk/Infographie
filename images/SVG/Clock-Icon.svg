@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fbdf8f;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: .4;
+      }
+    </style>
+  </defs>
+  <g id="Horloge-clock-icon">
+    <circle class="cls-2" cx="15" cy="15" r="11.65"/>
+    <circle class="cls-3" cx="15" cy="15" r="9.06"/>
+    <rect class="cls-1" x="14.23" y="8.37" width="1.12" height="8.16"/>
+    <rect class="cls-1" x="17.21" y="11.37" width="1.12" height="8.01" transform="translate(33.15 -2.39) rotate(90)"/>
+  </g>
+</svg>
