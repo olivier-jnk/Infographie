@@ -137,7 +137,7 @@ h2{
 	display: flex;
 	flex-direction: column;
 	/* row en version tablette/pc */
-	padding: 10% 4% 4% 4%;
+	padding: 10% 5% 5% 4%;
 	gap: 15px;
 }
 
@@ -307,11 +307,10 @@ h2{
 	/* justify-content: space-between; */
 }
 
-.client-collaboration .collaboration .maj-points .points .point .icon{
+/* .client-collaboration .collaboration .maj-points .points .point .icon{
 	box-sizing: border-box;
 	width: 50px;
-	/* surement innutile */
-}
+} */
 
 /* .client-collaboration .collaboration .maj-points .points .point span{
 	font-size: 3vw;
@@ -622,7 +621,30 @@ h2{
 	position: relative;
 }
 
-.arrow {
+.arrow{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10%;
+	position: absolute;
+	width: 18vw;
+    height: 2vh;
+	z-index: 2;
+}
+.arrow p{
+	color: white;
+}
+.arrow-right{
+	clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
+	right: 95%;
+}
+.arrow-left{
+	clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 10% 100%, 0 50%);
+	left: 95%;
+}
+
+/* .arrow {
     width: 100px;
     height: 50px;
     background-color: black;
@@ -651,7 +673,7 @@ h2{
 }
 .arrow-two{
 	left: 70%;
-}
+} */
 
 /* Faire un module spécial pour fleches poitant vers la droite et celles pointant vers la gauche. + problemes de maintenaibilité avec
 padding + taille du texte -> repercussions sur le positionnement du triangle */
@@ -681,6 +703,10 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	width: 100%;
 	height: 1vh;
 	border-radius: 5%;
+	display: flex;
+    align-items: center;
+
+	position: relative;
 }
 
 
@@ -692,24 +718,34 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 .page .full-content .all .second-content .social-sharing-buttons{
 	display: flex;
 	gap: 5%;
+	display: flex;
+    align-items: center;
+
+	position: relative;
 }
 
 .page .full-content .all .second-content .button{
 	background: orange;
 	height: 2vh;
 	width: 20%;
+	
 }
 
 
 .page .full-content .all .second-content .content-two{
 	background: grey;
 	height: 3vh;
+	display: flex;
+    align-items: center;
 }
 
 .page .full-content .all .second-content .nav-system{
 	background: orange;
 	height: 2.5vh;
+	display: flex;
+    align-items: center;
 
+	position: relative;
 }
 
 /* MajContent */
@@ -719,9 +755,13 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	flex-direction: column;
 	gap: 10px;
 	width: 35%;
+	/* display: flex;
+    align-items: center; */
+
+	position: relative;
 }
 
-.arroww{
+/* .arroww{
 	position: absolute;
 	left: 0%;
 
@@ -733,7 +773,7 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	padding: 5%;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .page .full-content .all .contact{
 	display: flex;
@@ -754,18 +794,28 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	height: 2.5vh;
 	/* border-radius: 30%; */
 	width: 80%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page .full-content .all .content-main{
 	background: orange;
 	height: 12vh;
 	width: 100%;
+
+	position: relative;
 }
 
 .page .full-content .all .footer{
 	background: orange;
 	height: 5vh;
 	width: 100%;
+	display: flex;
+    align-items: center;
+	/* Faire en sorte de moins repeter display flex + center (refactoring) */
+
+	position: relative;
 }
 
 .page .full-content .scroll{
@@ -837,9 +887,22 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	background-color: #4D5EAC;
 	padding: 3%;
 	width: 33%;
-	
+}
+.step-two .presentation .steps .timeline li p{
+	color: white;
 }
 
+.step-two .presentation .steps .timeline li:first-child{
+	clip-path: polygon(90% 0, 100% 45%, 90% 100%, 0 100%, 0 0);
+}
+
+.step-two .presentation .steps .timeline li:nth-child(2){
+	clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 49%);
+}
+
+.step-two .presentation .steps .timeline li:last-child{
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 10% 49%);
+}
 
 .step-two .presentation .steps .icons .icon{
 	background: #ffcf62 ;
@@ -920,4 +983,51 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 .design .step-three .blocks .block .icon img{
 	max-width: 80%;
 	max-height: 80%;
+}
+
+/* BreakPoints */
+
+/* X-Small */
+@media (max-width: 576px ){
+
+}
+
+/* Small */
+@media (max-width: 768px ){
+
+}
+
+/* Medium */
+@media (min-width: 768px ){
+
+
+	.research-inspiration-planning .f-part {
+		gap: 30px;
+	}
+	.research-inspiration-planning .f-part .personas {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	.research-inspiration-planning .f-part .personas img {
+		min-width: 25vw;
+		max-width: 25vw;
+	}
+
+
+}
+
+/* Large */
+@media (min-width: 992px ){
+
+}
+
+/* X-Large */
+@media (min-width: 1200px ){
+
+}
+
+/* XX-Large */
+@media (min-width: 1400px ){
+
 }
