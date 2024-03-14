@@ -65,8 +65,8 @@ table {
 /* icon */
 
 .icon{
-	width: 100px; 
-  	height: 100px;
+	width: 80px;
+    height: 80px;
   	border-radius: 50%; 
 	background-color: #8ebb63;
 	display: flex;
@@ -212,10 +212,41 @@ h2{
 	display: flex;
     flex-direction: column;
     padding: 4%;
-    border: solid white;
-	/* min-width: 70vw;
-    max-width: 77vw; */
-	/* -> Pas l'ideal, serai mieux de fixer la taille en fonction de la limite imposé de la partie. (x) */
+
+	position: relative;
+    border: 2px solid white;
+
+	/* border: solid white; */
+	/* clip-path: polygon(0 0, 90% 0, 90% 40%, 95% 50%, 90% 60%, 90% 100%, 0 100%); */
+	/* background-color: red; */
+	/* clip-path: polygon(0 0, 100% 0, 100% 40%, 110% 50%, 100% 60%, 100% 100%, 0 100%); */
+}
+
+.client-collaboration .bloc::after{
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* Ajustez la position de la flèche */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 10px solid white; /* Taille et couleur de la flèche */
+}
+
+.client-collaboration .block-one::after{
+	bottom: auto;
+	right: 50%;
+	transform: translateX(-50%) rotate(-90deg); /* Rotation de la flèche vers le bas */
+    top: -15px;
+}
+
+.client-collaboration .block-two::after{
+	top: auto;
+	right: 50%;
+	transform: translateX(-50%) rotate(90deg); /* Rotation de la flèche vers le bas */
+    bottom: -15px;
 }
 
 .client-collaboration .bloc .points{
@@ -225,8 +256,8 @@ h2{
 .client-collaboration .illustration img{
 	/* max-height: 10vh;
 	min-height: 10vh; */
-	min-width: 80vw;
-    max-width: 80vw;
+	min-width: 85vw;
+    max-width: 85vw;
 }
 
 .client-collaboration .illustration-two .content{
@@ -240,7 +271,8 @@ h2{
 	/* justify-content: space-between; */
 	align-items: center;
 	gap: 15px;
-	max-width: 80vw;
+	/* max-width: 80vw; */
+	width: 85vw;
 }
 
 .client-collaboration .collaboration .maj-points{
@@ -256,18 +288,34 @@ h2{
 
 .client-collaboration .collaboration .maj-points .points{
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
 	flex-wrap: wrap;
-	gap: 10%;
+	/* gap: 10%; */
+	padding: 0;
 }
 
 .client-collaboration .collaboration .maj-points .points .point{
+	/* flex-basis: 50%; */
+    box-sizing: border-box;
+	width: 50%;
+	
 	display: flex;
 	flex-direction: row;
 	gap: 10%;
+	margin-top: 5%;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
+
+.client-collaboration .collaboration .maj-points .points .point .icon{
+	box-sizing: border-box;
+	width: 50px;
+	/* surement innutile */
+}
+
+/* .client-collaboration .collaboration .maj-points .points .point span{
+	font-size: 3vw;
+} */
 
 .client-collaboration .collaboration .maj-points .icon{
 	width: 40px; 
@@ -506,11 +554,14 @@ h2{
 .design .step-one .page-illustration .page .base .control{
 	display: flex;
 	flex-direction: row;
-	gap: 5%;
+	/* gap: 5%; */
+	gap: 3px;
 }
 .design .step-one .page-illustration .page .base .control .round{
-	width: 1vw;
-	height: 0.5vh;
+	/* width: 1vw;
+	height: 0.5vh; */
+	width: 4px;
+    height: 3px;
 	border-radius: 50%;
 }
 .design .step-one .page-illustration .page .base .control .round-red{
@@ -567,8 +618,44 @@ h2{
 	/* Pas la bonne couleur */
 	height: 20%;
     padding: 6%;
-	
+
+	position: relative;
 }
+
+.arrow {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+	z-index: 1;
+	right: 50%;
+	color: white;
+	padding: 5% 10%;
+	display: flex;
+	align-items: center;
+}
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+	border-width: 31px 0 31px 31px;
+    border-color: transparent transparent transparent black;
+}
+
+.arrow-one {
+	right: 70%;
+}
+.arrow-two{
+	left: 70%;
+}
+
+/* Faire un module spécial pour fleches poitant vers la droite et celles pointant vers la gauche. + problemes de maintenaibilité avec
+padding + taille du texte -> repercussions sur le positionnement du triangle */
+/* Corrigé mais va poser dans tous les cas de GROS problemes pour le responsive voir commment regler ca. */
 
 .page .full-content .all .header .logo{
 	background-color: white;
@@ -634,6 +721,20 @@ h2{
 	width: 35%;
 }
 
+.arroww{
+	position: absolute;
+	left: 0%;
+
+	background-image: url(images/SVG/ArrowRight.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	display: flex;
+	padding: 5%;
+	justify-content: center;
+	align-items: center;
+}
+
 .page .full-content .all .contact{
 	display: flex;
 	flex-direction: row;
@@ -696,6 +797,7 @@ h2{
 	/* row en version tablette/pc */
 	padding: 4%;
 	gap: 10px;
+	width: 85vw;
 }
 
 .step-two .presentation{
@@ -720,13 +822,24 @@ h2{
 
 .step-two .presentation .steps .icons{
 	display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+	/* around ou between mais en tout cas around super bien approprié pour la version grand ecran, combiné avec la meta timeline li 33% */
 }
 .step-two .presentation .steps .timeline{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
+.step-two .presentation .steps .timeline li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #4D5EAC;
+	padding: 3%;
+	width: 33%;
+	
+}
+
 
 .step-two .presentation .steps .icons .icon{
 	background: #ffcf62 ;
@@ -761,6 +874,7 @@ h2{
 	flex-direction: column;
 	gap: 15px;
 	padding: 4%;
+	width: 85vw;
 }
 
 .design .step-three .blocks{
@@ -780,7 +894,7 @@ h2{
 	padding: 10% 10% 6% 10%;
 	gap: 10px;
 	min-width: 60vw;
-	max-width: 60vw;
+	max-width: 90vw;
 }
 
 .design .step-three .blocks .block .icon{
