@@ -3,6 +3,11 @@
 	src: url('fonts/Roboto/Roboto-Regular.ttf')
 }
 
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url('fonts/Roboto/Roboto-Bold.ttf');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	margin: 0;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -73,6 +78,13 @@ table {
 .icon img{
 	min-width: 80%;
 	max-width: 80%;
+}
+
+h2{
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 6vw;
+	/* Mettre la roboto-bold */
 }
 /* -> Permet d'éviter la répétition. */
 
@@ -114,16 +126,19 @@ table {
 }
 
 .introduction .setting .crayon{
-	min-width: 20vw;
-	max-width: 20vw;
 	position: absolute;
+	z-index: 1;
+	min-width: 12vw;
+    max-width: 12vw;
+    right: 6%;
 }
 
 .introduction .btm-content {
 	display: flex;
 	flex-direction: column;
 	/* row en version tablette/pc */
-	padding: 4%;
+	padding: 10% 4% 4% 4%;
+	gap: 15px;
 }
 
 .introduction .title{
@@ -132,13 +147,35 @@ table {
 	gap: 10px;
 }
 
+.introduction .title .w-design-p{
+	font-family: "Roboto-bold";
+	font-size: 13vw;
+    font-weight: 900;
+    text-transform: uppercase;
+	/* text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+}
+
+.introduction .title .w-design-p span{
+	font-weight: 900;
+    font-size: 21vw;
+}
+/* faire en sorte que p + span restent bien allignés et prennent la place qu'ils doivent prendre sans dépasser. */
+
 .introduction .title .rounded-txt{
-	display: flex;
+	/* display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 3%;
 	background-color: #505bb2;
-	border-radius: 5%;
+	border-radius: 5%; */
+
+	background-color: #505bb2;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
 }
 
 .introduction .title .rounded-txt p{
@@ -157,8 +194,13 @@ table {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	gap: 15px;
 	background: #9F83BB;
+}
+
+.client-collaboration h2{
+	font-size: 6vw;
+	/* Passer à la roboto-bold pour un effet de gras plus marqué. -> Ne fonctionne pas je crois. */
 }
 
 .client-collaboration h3{
@@ -166,15 +208,25 @@ table {
 	justify-content: center;
 }
 
+.client-collaboration .bloc{
+	display: flex;
+    flex-direction: column;
+    padding: 4%;
+    border: solid white;
+	/* min-width: 70vw;
+    max-width: 77vw; */
+	/* -> Pas l'ideal, serai mieux de fixer la taille en fonction de la limite imposé de la partie. (x) */
+}
+
 .client-collaboration .bloc .points{
 	display: flex;
 	justify-content: center;
 }
-
 .client-collaboration .illustration img{
 	/* max-height: 10vh;
 	min-height: 10vh; */
 	min-width: 80vw;
+    max-width: 80vw;
 }
 
 .client-collaboration .illustration-two .content{
@@ -187,11 +239,14 @@ table {
 	flex-direction: column;
 	/* justify-content: space-between; */
 	align-items: center;
+	gap: 15px;
+	max-width: 80vw;
 }
 
 .client-collaboration .collaboration .maj-points{
 	display: flex;
 	flex-direction: column;
+	gap: 15px;
 }
 
 .client-collaboration .collaboration .maj-points h3{
@@ -210,6 +265,8 @@ table {
 	display: flex;
 	flex-direction: row;
 	gap: 10%;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .client-collaboration .collaboration .maj-points .icon{
@@ -240,21 +297,30 @@ table {
 	background: black;
 	padding: 5%;
 	gap: 5%;
+	align-items: center;
+	justify-content: center;
 	/* justify-content: space-between; */
 }
 
 .client-collaboration .collaboration .illustration-two .content p{
 	color: #ffda64;
 	font-weight: 900;
+	gap: 2px;
+    display: flex;
+    flex-direction: column;
+	font-size: 6vw;
 }
 
 .client-collaboration .collaboration .illustration-two .content p .thin{
 	color: white;
 	font-weight: 400;
+	text-transform: lowercase;
+	font-size: 4.5vw; 
+	/* attention */
 }
 
 .client-collaboration .collaboration .illustration-two .img-content{
-	height: 40px;
+	height: 60px;
   	border-radius: 50%; 
 	background-color: #fbce5a;
 	display: flex;
@@ -267,13 +333,18 @@ table {
 	min-height: 120%;
 }
 
+.client-collaboration p:last-of-type{
+	color: #FAFEFF;
+	text-transform: uppercase ;
+	font-weight: 300;
+}
+
 /* Research, inspiration, Planning */
 
 .research-inspiration-planning .f-part{
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
-	/* width: 100%; */
+	gap: 15px;
 	height: 80%;
 	background: #505CAB;
 	display: flex;
@@ -281,7 +352,12 @@ table {
 	justify-content: center;
 	color: #fff;
 	font-size: 24px;
-	padding: 4%;
+	padding: 5% 10%;
+	/* width: 100%; */
+}
+
+.research-inspiration-planning h2{
+	color: white;
 }
 
 .research-inspiration-planning .f-part .personas{
@@ -291,7 +367,8 @@ table {
 }
 
 .research-inspiration-planning .f-part .personas img{
-	min-width: 30vw;
+	min-width: 70vw;
+	max-width: 70vw;
 }
 
 /* secondPart */
@@ -334,13 +411,17 @@ table {
 .research-inspiration-planning .s-part .bloc .text-content{
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 8px;
 }
 
 .research-inspiration-planning .s-part .bloc .text-content .tip{
 	display: flex;
 	align-items: center;
 	gap: 5%;
+}
+
+.research-inspiration-planning .s-part .bloc .text-content .tip p{
+	font-size: 4vw;
 }
 
 .research-inspiration-planning .s-part .bloc .icon img{
@@ -359,7 +440,7 @@ table {
 
 .research-inspiration-planning .s-part .bloc .text-content .tip .icon{
 	width: 120px; 
-  	height: 40px;
+  	height: 55px;
 	background-color: #A480C1;
 	border: none;
 }
@@ -384,10 +465,9 @@ table {
 	padding: 4%;
 }
 
-.design h2{
-	font-weight: 900;
+/* .design h2{
 	text-transform: uppercase;
-}
+} */
 
 .design h3{
 	font-weight: 900;
@@ -612,7 +692,8 @@ table {
 
 .step-two{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	/* row en version tablette/pc */
 	padding: 4%;
 	gap: 10px;
 }
@@ -624,17 +705,27 @@ table {
 	gap: 10px;
 }
 
-.step-two .presentation h3{
+.step-two h3{
 	background: #515cac;
 	color: white;
 	padding: 3%;
 }
 .step-two .presentation .steps{
-	display: flex;
+	/* display: flex; */
+
+	gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .step-two .presentation .steps .icons{
-
+	display: flex;
+    justify-content: space-between;
+}
+.step-two .presentation .steps .timeline{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
 }
 
 .step-two .presentation .steps .icons .icon{
@@ -659,8 +750,8 @@ table {
 }
 
 .step-two .tip .icon img{
-	min-width: 100%;
-	max-width: 100%;
+	min-width: 180%;
+    max-width: 180%;
 }
 
 /* Step-3 */

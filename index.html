@@ -17,7 +17,7 @@
 
             <!-- Titre coupé en deux... -->
             <div class="setting">
-                <img cass="crayon" src="images/SVG/Pencil-V2-merged.svg" alt="pencil">
+                <img class="crayon" src="images/SVG/Pencil-V2-merged.svg" alt="pencil">
                 <img class="paper" src="images/SVG/PaperCorner.svg" alt="feuille blanche de papier (mettre en anglais)">
             </div>
             <div class="btm-content">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="title">
                     <!-- flex col -->
-                    <p>A web design <br><span>Poject</span></p>
+                    <p class="w-design-p">A web design <br><span>Project</span></p>
                     <!-- h? ? -->
                     <div class="rounded-txt">
                         <!-- rounded bg -->
@@ -39,7 +39,6 @@
                     </p>
                 </div>
             </div>
-            
         </section>
         
         <section class="client-collaboration">
@@ -51,81 +50,84 @@
                 <div class="maj-points"> 
                     <!-- flex-col -->
                     <div class="bloc bloc-un">
+                        <!-- BLOCK pas BLOC -->
                         <h3>Determine the project's:</h3>
                         <!-- Vraiment h3 ? -->
-                        <div class="points">
+
+                        <!-- faire la fleche pour chaque bloc, pointant vers la bonne image, donc qui changera en fonction du responsive -->
+                        <ul class="points">
                             <!-- row + wrap -->
-                            <div class="point point-one">
+                            <li class="point point-one">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/TaskTicked-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Objectives</span>
-                            </div>
-                            <div class="point point-two">
+                            </li>
+                            <li class="point point-two">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Settings-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Purpose</span>
-                            </div>
-                            <div class="point point-three">
+                            </li>
+                            <li class="point point-three">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Target-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Target Audience</span>
-                            </div>
-                            <div class="point point-four">
+                            </li>
+                            <li class="point point-four">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Paper-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Content and feature requirements</span>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="bloc bloc-deux">
                         <h3>Finalize a formal afreement on:</h3>
-                        <div class="points">
+                        <ul class="points">
                             <!-- row + wrap -->
-                            <div class="point point-one">
+                            <li class="point point-one">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/BankCards-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Budget</span>
-                            </div>
-                            <div class="point point-two">
+                            </li>
+                            <li class="point point-two">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Loup-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Scope</span>
-                            </div>
-                            <div class="point point-three">
+                            </li>
+                            <li class="point point-three">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Clock-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Timeline</span>
-                            </div>
-                            <div class="point point-four">
+                            </li>
+                            <li class="point point-four">
                                 <div class="icon">
                                     <!-- bg = rond -->
                                     <img src="images/SVG/Temple-Icon.svg" alt="">
                                     <!-- image centered -->
                                 </div>
                                 <span>Ownership and rights</span>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -139,8 +141,8 @@
                         <p>DON'T FORGET<br> <span class="thin"> to get this in writing !</span></p>
                     </div>
                 </div>
+                <p>Gather all necessary materials from the client and/or third parties</p>
             </div>     
-            <p>Gather all necessary materials from the client and/or third parties</p>
         </section>
         
         <section class="research-inspiration-planning">
@@ -150,7 +152,7 @@
                 <div class="personas">
                     <!-- Ul li a la place -->
                     <!-- flex row -->
-                    <img src="images/SVG/Ecran1.svg" alt="screenOne">
+                    <img src="images/SVG/Ecran1v3.svg" alt="screenOne">
                     <img src="images/SVG/Ecran2.svg" alt="">
                     <img src="images/SVG/Ecran3.svg" alt="">
                     <!-- possibilité d'importer chq image en plusieurs parties pour une meilleure liberté d'animation -->
@@ -283,18 +285,14 @@
                 </div>
             </div>
             <div class="step step-two">
+                <h3>Step 2: Present your mock-up to the client for an approval cycle, which consist of:</h3>
                 <!-- flex row -->
-                <div class="img">
-                    <!-- inserer l'image et coder le fond noir OU/-> coder la totalité du visuel en html/css -->
-                </div>
+                <img src="images/SVG/MockUp.svg" alt="">
+                <!-- Faire un bloc spécial pour le titre et l'image qui seront invérsé pour le responsive -->
+                <!-- -> Problematique car en responsive le titre fait partie complètement du bloc de droite. Sinon joueur avec le display-none (2 version.) -->
                 <div class="presentation"> 
                     <!-- revoir le nom de class. -->
                     <!-- flex col -->
-
-                    <h3>Step 2: Present your mock-up to the client for an approval cycle, which consist of:</h3>
-                    <!-- <div class="text-box">     
-                    </div> -->
-                    <img src="images/SVG/MockUp.svg" alt="">
                     <div class="steps">
                         <!-- flex col -->
                         <!-- Faire un ul icon + point timeline plutot que le séparer, cela permettra de les garder au meme niveau. -->
