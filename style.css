@@ -72,9 +72,8 @@ table {
 
 .icon img{
 	min-width: 80%;
-	min-height: 80%;
+	max-width: 80%;
 }
-
 /* -> Permet d'éviter la répétition. */
 
 /*bg-cadrillage*/
@@ -85,13 +84,69 @@ table {
 	background-color: #F7F6EB;
     /* width: 100%; */
 	/* 89% mobile / 100% PC ? */
-    padding: 20px; 
+
+    /* padding: 20px; */
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	/* padding: 4%; */
+	padding: 0;
+	gap: 10px;
 }
 
-.introduction .bottom {
+.introduction .setting{
 	display: flex;
-	flex-direction: row;
+    /* position: absolute; */
+    position: relative;
+    justify-content: flex-end;
+}
+/* .introduction .setting img{
+	min-width: 20vw;
+	max-width: 20vw;
+	position: absolute;
+} */
+
+.introduction .setting .paper{
+	min-width: 40vw;
+	max-width: 40vw;
+	position: absolute;
+}
+
+.introduction .setting .crayon{
+	min-width: 20vw;
+	max-width: 20vw;
+	position: absolute;
+}
+
+.introduction .btm-content {
+	display: flex;
+	flex-direction: column;
+	/* row en version tablette/pc */
+	padding: 4%;
+}
+
+.introduction .title{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.introduction .title .rounded-txt{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3%;
+	background-color: #505bb2;
+	border-radius: 5%;
+}
+
+.introduction .title .rounded-txt p{
+	color: white;
+	font-size: 7vw;
+	text-transform: uppercase;
+	font-weight: 800;
+	/* Tout en capital */
 }
 
 /* //Section2// */
@@ -125,7 +180,6 @@ table {
 .client-collaboration .illustration-two .content{
 	display: flex;
 	flex-direction: row;
-
 }
 
 .client-collaboration .collaboration{
@@ -159,10 +213,6 @@ table {
 }
 
 .client-collaboration .collaboration .maj-points .icon{
-	/* background-color: #314d58;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center; */
 	width: 40px; 
 	/* vh et vw pour responsive */
   	height: 40px;
@@ -178,7 +228,6 @@ table {
 	min-width: 80%;
 	max-width: 80%;
 }
-
 
 .client-collaboration .collaboration .illustration-two{
 	gap: 0;
@@ -211,20 +260,14 @@ table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* overflow: hidden;  */
-	/* position: relative; */
 }
 
 .client-collaboration .collaboration .illustration-two .img-content img{
-	/* position: absolute; */
 	min-width: 80%;
 	min-height: 120%;
 }
 
-
-
 /* Research, inspiration, Planning */
-
 
 .research-inspiration-planning .f-part{
 	display: flex;
@@ -281,15 +324,11 @@ table {
 	gap: 12px;
 }
 
-.research-inspiration-planning .s-part .bloc .img-content{
+.research-inspiration-planning .s-part .bloc .icon{
 	width: 100px; 
   	height: 100px;
-  	border-radius: 50%; 
-	background-color: #A480C1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden; 
+	background-color: unset;
+	border: 10px #4f5eaf solid;
 }
 
 .research-inspiration-planning .s-part .bloc .text-content{
@@ -304,49 +343,58 @@ table {
 	gap: 5%;
 }
 
-.research-inspiration-planning .s-part .bloc img{
-	min-width: 50%;
-	min-height: 50%;
+.research-inspiration-planning .s-part .bloc .icon img{
+	min-width: 70%;
+    max-width: 70%;
+}
+
+.research-inspiration-planning .s-part .bloc-two .icon img{
+	min-width: 111%;
+    max-width: 111%;
 }
 
 .research-inspiration-planning .s-part .bloc .text-content .tip{
 	display: flex;
 }
-.research-inspiration-planning .s-part .bloc .text-content .tip img{
-	/* max-width: 5vw; */
-	min-width: 100%;
-	min-height: 100%;
-}
+
 .research-inspiration-planning .s-part .bloc .text-content .tip .icon{
-	/* background: #A480C1;
-	border-radius: 50%; */
-	width: 100px; 
+	width: 120px; 
   	height: 40px;
-  	border-radius: 50%; 
 	background-color: #A480C1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden; 
+	border: none;
 }
+
+.research-inspiration-planning .s-part .bloc .text-content .tip .icon img{
+    min-width: 70%;
+    max-width: 70%;
+}
+
 /* //Section 3// */
 
 .design{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    margin-top: 5%;
+	background-image: linear-gradient(#EDECE1 3px, transparent 2px),
+	linear-gradient(90deg, #EDECE1 3px, transparent 2px);
+    background-size: 25px 25px;
+	background-color: #F7F6EB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	gap: 10px;
+	padding: 4%;
 }
 
+.design h2{
+	font-weight: 900;
+	text-transform: uppercase;
+}
 
-/* .design h3{
-	background: #515cac;
-    color: white;
-    padding: 3%;
-	max-width: 80vw;
-} */
+.design h3{
+	font-weight: 900;
+}
 
 /* PAGE illustration */
+
 .design .step-one{
 	display: flex;
     flex-direction: column;
@@ -572,7 +620,7 @@ table {
 .step-two .presentation{
 	display: flex;
 	flex-direction: column;
-	padding: 4%;
+	/* padding: 4%; */
 	gap: 10px;
 }
 
@@ -593,13 +641,27 @@ table {
 	background: #ffcf62 ;
 }
 
-
 .step-two .presentation .steps .icons .icon img{
 	min-width: 50%;
-	min-height: 50%;
+	max-width: 50%;
 }
 
+.step-two .tip{
+	display: flex;
+    align-items: center;
+    gap: 5%;
+}
 
+.step-two .tip .icon{
+	background: #ffcf62 ;
+	width: 120px;
+    height: 65px;
+}
+
+.step-two .tip .icon img{
+	min-width: 100%;
+	max-width: 100%;
+}
 
 /* Step-3 */
 
@@ -624,7 +686,7 @@ table {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 5%;
+	padding: 10% 10% 6% 10%;
 	gap: 10px;
 	min-width: 60vw;
 	max-width: 60vw;
