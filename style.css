@@ -964,17 +964,19 @@ h2{
 	max-height: 80%;
 }
 
+/* Mauvais ordre surement. Le non respect du principe du CSS (cascading-style-sheet) fait que le responsive ne fonctionne Pas. */
+
 /* BreakPoints */
 
 /* X-Small */
-@media (max-width: 576px ){
+/* @media (max-width: 576px ){
 
-}
+} */
 
 /* Small */
-@media (max-width: 768px ){
+/* @media (max-width: 768px ){
 
-}
+} */
 
 /* Medium */
 @media (min-width: 768px ){
@@ -993,6 +995,7 @@ h2{
 }
 
 /* Large */
+/* 992 normalement */
 @media (min-width: 992px ){
 
 	h2 {
@@ -1009,7 +1012,7 @@ h2{
 		justify-content: space-between;
 	}
 	.introduction .btm-content .thumbnail{
-		min-width: 50vw
+		min-width: 50vw;
 	}
 	.introduction .title {
 		min-width: 10vw;
@@ -1069,11 +1072,11 @@ h2{
 }
 
 /* X-Large */
-@media (min-width: 1200px ){
+/* @media (min-width: 1200px ){
 
-}
+} */
 
 /* XX-Large */
-@media (min-width: 1400px ){
+/* @media (min-width: 1400px ){
 
-}
+} */
