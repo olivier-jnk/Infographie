@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.06 491.06">
+  <defs>
+    <style>
+
+      .cls-1 {
+        fill: #18b45d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        fill: #d02f1f;
+      }
+
+      .cls-4 {
+        fill: #e7e7e7;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #a7aaac;
+      }
+
+      .cls-7 {
+        fill: #ffd368;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        font-size: 120px;
+      }
+
+      .cls-12, .cls-13 {
+        fill: #515cac;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-13 {
+        font-size: 144px;
+      }
+
+      .cls-14 {
+        letter-spacing: -.06em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <path class="cls-2" d="m491.06,245.53c0-39.47-9.33-76.75-25.87-109.79v219.58c16.55-33.04,25.87-70.32,25.87-109.79Z"/>
+        <path class="cls-2" d="m0,245.53c0,39.05,9.14,75.97,25.36,108.74v-217.51C9.14,169.55,0,206.47,0,245.53Z"/>
+        <path class="cls-2" d="m245.53,0C159.84,0,84.41,43.91,40.49,110.45h410.09C406.65,43.91,331.23,0,245.53,0Z"/>
+        <path class="cls-4" d="m245.53,491.06c60.8,0,116.44-22.11,159.32-58.72H86.21c42.88,36.61,98.52,58.72,159.32,58.72Z"/>
+        <path class="cls-5" d="m25.36,110.45v26.32c4.51-9.11,9.56-17.9,15.13-26.32h-15.13Z"/>
+        <path class="cls-5" d="m465.19,110.45h-14.62c5.35,8.11,10.24,16.55,14.62,25.3v-25.3Z"/>
+        <path class="cls-5" d="m86.21,432.34h318.64c24.92-21.27,45.52-47.44,60.34-77.02v-219.58c-4.38-8.74-9.26-17.19-14.62-25.3H40.49c-5.56,8.43-10.62,17.21-15.13,26.32v217.51c14.85,30,35.64,56.54,60.85,78.06Z"/>
+      </g>
+      <path class="cls-6" d="m37.74,70.47h415.02c6.86,0,12.43,5.57,12.43,12.43v27.55H25.36v-27.6c0-6.83,5.55-12.38,12.38-12.38Z"/>
+      <circle class="cls-3" cx="44.55" cy="91.11" r="4.98"/>
+      <circle class="cls-7" cx="68.17" cy="91.11" r="4.98"/>
+      <circle class="cls-1" cx="90.51" cy="91.11" r="4.98"/>
+      <rect class="cls-4" x="53.53" y="127.45" width="376.6" height="42.09"/>
+      <g id="text">
+        <text style="font-family: 'Roboto', sans-serif;" class="cls-13" transform="translate(53.53 401.6) scale(.87 1)">
+          <tspan x="0" y="0">S</tspan>
+          <tspan class="cls-14" x="88.52" y="0">T</tspan>
+          <tspan x="169.17" y="0">A</tspan>
+          <tspan class="cls-10" x="266.06" y="0">R</tspan>
+          <tspan class="cls-11" x="354.45" y="0">T</tspan>
+        </text>
+        <text style="font-family: 'Roboto', sans-serif;" class="cls-12" transform="translate(53.53 282.51) scale(.87 1)">
+          <tspan x="0" y="0">HOW</tspan>
+          <tspan class="cls-9" x="272.58" y="0"> </tspan>
+          <tspan class="cls-8" x="298.95" y="0">T</tspan>
+          <tspan x="371.54" y="0">O</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

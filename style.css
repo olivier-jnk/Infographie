@@ -208,7 +208,7 @@ h2{
 	justify-content: center;
 }
 
-.client-collaboration .bloc{
+.client-collaboration .block{
 	display: flex;
     flex-direction: column;
     padding: 4%;
@@ -222,7 +222,7 @@ h2{
 	/* clip-path: polygon(0 0, 100% 0, 100% 40%, 110% 50%, 100% 60%, 100% 100%, 0 100%); */
 }
 
-.client-collaboration .bloc::after{
+.client-collaboration .block::after{
 	content: '';
     position: absolute;
     top: 50%;
@@ -249,7 +249,7 @@ h2{
     bottom: -15px;
 }
 
-.client-collaboration .bloc .points{
+.client-collaboration .block .points{
 	display: flex;
 	justify-content: center;
 }
@@ -436,7 +436,7 @@ h2{
 	padding: 4%;
 }
 
-.research-inspiration-planning .s-part .bloc{
+.research-inspiration-planning .s-part .block{
 	background: black;
 	display: flex;
 	flex-direction: column;
@@ -448,51 +448,51 @@ h2{
 	gap: 12px;
 }
 
-.research-inspiration-planning .s-part .bloc .icon{
+.research-inspiration-planning .s-part .block .icon{
 	width: 100px; 
   	height: 100px;
 	background-color: unset;
 	border: 10px #4f5eaf solid;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content{
+.research-inspiration-planning .s-part .block .text-content{
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content .tip{
+.research-inspiration-planning .s-part .block .text-content .tip{
 	display: flex;
 	align-items: center;
 	gap: 5%;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content .tip p{
+.research-inspiration-planning .s-part .block .text-content .tip p{
 	font-size: 4vw;
 }
 
-.research-inspiration-planning .s-part .bloc .icon img{
+.research-inspiration-planning .s-part .block .icon img{
 	min-width: 70%;
     max-width: 70%;
 }
 
-.research-inspiration-planning .s-part .bloc-two .icon img{
+.research-inspiration-planning .s-part .block-two .icon img{
 	min-width: 111%;
     max-width: 111%;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content .tip{
+.research-inspiration-planning .s-part .block .text-content .tip{
 	display: flex;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content .tip .icon{
+.research-inspiration-planning .s-part .block .text-content .tip .icon{
 	width: 120px; 
   	height: 55px;
 	background-color: #A480C1;
 	border: none;
 }
 
-.research-inspiration-planning .s-part .bloc .text-content .tip .icon img{
+.research-inspiration-planning .s-part .block .text-content .tip .icon img{
     min-width: 70%;
     max-width: 70%;
 }
@@ -589,7 +589,8 @@ h2{
 	flex-direction: row;
 	width: 100%;
     background: white;
-	min-height: 40vh;
+	min-height: 30vh;
+	/* -> LE parametre qui determine la taille moyen de la page. */
 }
 
 .page .full-content .all{
@@ -599,23 +600,26 @@ h2{
 	/* min-height: 40vh; */
 	padding: 5%;
     width: 90%;
-	gap: 5%;
+	gap: 3%;
 	/* ? */
 }
 
 .page .full-content .all .divided{
 	display: flex;
 	flex-direction: row;
-	gap: 5%;
+	justify-content: space-between;
+	/* gap: 5%; */
 }
 
 .page .full-content .all .header{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	background: #758283;
+	background: #FFD167;
 	/* Pas la bonne couleur */
-	height: 20%;
+
+	height: 7%;
+    /* align-items: center; */
     padding: 6%;
 
 	position: relative;
@@ -644,41 +648,6 @@ h2{
 	left: 95%;
 }
 
-/* .arrow {
-    width: 100px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-	z-index: 1;
-	right: 50%;
-	color: white;
-	padding: 5% 10%;
-	display: flex;
-	align-items: center;
-}
-.arrow::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -25%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-	border-width: 31px 0 31px 31px;
-    border-color: transparent transparent transparent black;
-}
-
-.arrow-one {
-	right: 70%;
-}
-.arrow-two{
-	left: 70%;
-} */
-
-/* Faire un module spécial pour fleches poitant vers la droite et celles pointant vers la gauche. + problemes de maintenaibilité avec
-padding + taille du texte -> repercussions sur le positionnement du triangle */
-/* Corrigé mais va poser dans tous les cas de GROS problemes pour le responsive voir commment regler ca. */
-
 .page .full-content .all .header .logo{
 	background-color: white;
 	width: 5vw;
@@ -686,7 +655,7 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 
 .page .full-content .all .bar{
 	background: grey;
-	height: 10%;
+	height: 6%;
 }
 
 /* Aside */
@@ -695,13 +664,13 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	flex-direction: column;
 	gap: 10px;
 	/* padding: 5%; */
-	width: 60%;
+	width: 40%;
 }
 
 .page .full-content .all .second-content .search-field{
-	background: orange;
+	background: #FFD167;
 	width: 100%;
-	height: 1vh;
+	height: 10%;
 	border-radius: 5%;
 	display: flex;
     align-items: center;
@@ -718,14 +687,14 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 .page .full-content .all .second-content .social-sharing-buttons{
 	display: flex;
 	gap: 5%;
-	display: flex;
+	justify-content: space-between;
     align-items: center;
 
 	position: relative;
 }
 
 .page .full-content .all .second-content .button{
-	background: orange;
+	background: #FFD167;
 	height: 2vh;
 	width: 20%;
 	
@@ -739,13 +708,14 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
     align-items: center;
 }
 
-.page .full-content .all .second-content .nav-system{
-	background: orange;
-	height: 2.5vh;
-	display: flex;
+/* changement */
+.page .full-content .all .ft-content .nav-system{
+	background: #FFD167;
+    height: 3vh;
+    width: 40%;
+    display: flex;
     align-items: center;
-
-	position: relative;
+    position: relative;
 }
 
 /* MajContent */
@@ -754,7 +724,7 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 35%;
+	width: 55%;
 	/* display: flex;
     align-items: center; */
 
@@ -782,7 +752,7 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 }
 
 .page .full-content .all .contact .pp{
-	background: orange;
+	background: #FFD167;
 	height: 2.5vh;
 	border-radius:30%;
 	width: 20%;
@@ -790,7 +760,7 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 }
 
 .page .full-content .all .contact .infos{
-	background: orange;
+	background: #FFD167;
 	height: 2.5vh;
 	/* border-radius: 30%; */
 	width: 80%;
@@ -800,32 +770,36 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 }
 
 .page .full-content .all .content-main{
-	background: orange;
-	height: 12vh;
+	background: #FFD167;
+	height: 80%;
 	width: 100%;
 
 	position: relative;
 }
 
-.page .full-content .all .footer{
-	background: orange;
-	height: 5vh;
-	width: 100%;
+.page .full-content .all .ft-content{
 	display: flex;
-    align-items: center;
-	/* Faire en sorte de moins repeter display flex + center (refactoring) */
+	justify-content: space-between;
+	align-items: center;
+}
 
-	position: relative;
+.page .full-content .all .ft-content .footer{
+	background: #FFD167;
+    height: 3vh;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    position: relative;
+	/* Faire en sorte de moins repeter display flex + center (refactoring) */
 }
 
 .page .full-content .scroll{
-	height: 55vh;
+	height: 29vh;
 	/* Le mettre à 100% de la taille d'un parent qui ordone la taille de la zone de contenu. */
 	width: 1vw;
 	padding: 2%;
 	display: flex;
 	flex-direction: column;
-	
 }
 
 .page .full-content .scroll .scroll-bar{
@@ -999,8 +973,6 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 
 /* Medium */
 @media (min-width: 768px ){
-
-
 	.research-inspiration-planning .f-part {
 		gap: 30px;
 	}
@@ -1013,8 +985,6 @@ padding + taille du texte -> repercussions sur le positionnement du triangle */
 		min-width: 25vw;
 		max-width: 25vw;
 	}
-
-
 }
 
 /* Large */
