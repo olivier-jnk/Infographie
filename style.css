@@ -176,6 +176,12 @@ h2{
     text-align: center;
     text-decoration: none; 
     display: inline-block;
+
+	transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.introduction .title .rounded-txt:hover {
+    background-color: #5c6bdb;
 }
 
 .introduction .title .rounded-txt p{
@@ -446,7 +452,12 @@ h2{
 	max-width: 90vw;
 	padding: 4%;
 	gap: 20px;
+	transition: background-color 0.5s ease;
 }
+.research-inspiration-planning .s-part .block:hover {
+    background-color: rgb(22, 27, 54);
+}
+
 
 .research-inspiration-planning .s-part .block .icon{
 	width: 100px; 
@@ -1025,6 +1036,7 @@ h2{
 	}
 	.introduction .title .w-design-p {
 		font-size: 5vw;
+		z-index: 1;
 	}
 	.introduction .title .w-design-p span {
 		font-size: 9vw;
@@ -1072,27 +1084,6 @@ h2{
 	}
 	.client-collaboration p:last-of-type {
 		font-size: 1.7vw;
-	}
-
-	.design .step-three .blocks {
-		display: flex;
-		flex-direction: row;
-		gap: 5%;
-		align-items: center;
-		justify-content: center;
-	}
-	.design .step-three .blocks .block {
-		background-color: #9ccc6c;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 4% 4% 3% 4%;
-		gap: 20px;
-		min-width: 20vw;
-		max-width: 20vw;
-		min-height: 20vh;
-    	max-height: 20vh;
 	}
 
 	/* Research inspiration planning -> SECTION */
@@ -1158,6 +1149,64 @@ h2{
 
 	/* DESIGN SECTION */
 
+	/* step-1 */
+	.design .step-three .blocks {
+		display: flex;
+		flex-direction: row;
+		gap: 5%;
+		align-items: center;
+		justify-content: center;
+	}
+	.design .step-three .blocks .block {
+		background-color: #9ccc6c;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 4% 4% 3% 4%;
+		gap: 20px;
+		min-width: 20vw;
+		max-width: 20vw;
+		min-height: 20vh;
+    	max-height: 20vh;
+	}
+	.page .full-content .all {
+		padding: 2%;
+	}
+	.page .full-content {
+		min-height: 80vh;
+	}
+	.design .step-one .page-illustration {
+		min-width: 63vw;
+		max-width: 60vw;
+		padding: 2%;
+	}
+	.arrow {
+		max-width: 154px;
+		min-width: 293px;
+		max-height: 30px;
+		min-height: 30px;
+		padding: 3%;
+	}
+	.page .full-content {
+		min-height: 80vh;
+	}
+	.page .full-content .all .header {
+		height: 15%;
+	}
+	.page .full-content .all .bar {
+		height: 7%;
+	}
+	.page .full-content .all .content-main {
+		height: 18vh;
+	}
+	.page .full-content .all .second-content .content-one {
+		height: 10vh;
+	}
+	.page .full-content .all .second-content .content-two {
+		height: 9vh;
+	}
+
 	/* step-2 */
 	.step-two {
 		flex-direction: row;
@@ -1201,17 +1250,77 @@ h2{
 	}
 
 	.research-inspiration-planning .s-part .block .icon-spe {
-		width: 132px;
-		height: 132px;
+		width: 140px;
+		height: 140px;
 		background-color: black;
 		position: absolute;
 		right: 87%;
+		transition: background-color 0.5s ease;
+	}
+	.research-inspiration-planning .s-part .block:hover .icon-spe {
+		background-color: rgb(22, 27, 54);
 	}
 	.research-inspiration-planning .s-part .block .text-content p:first-of-type {
 		font-size: 1.5vw;
 	}
 	.research-inspiration-planning .s-part .block .text-content .tip p {
 		font-size: 1vw;
+	}
+	.research-inspiration-planning .s-part .block .text-content {
+		margin-left: 16%;
+	}
+
+	/* Design section */
+	.design .step-one .page-illustration .page .base .control {
+		display: flex;
+		flex-direction: row;
+		/* gap: 5%; */
+		gap: 15px;
+	}
+	.design .step-one .page-illustration .page .base .control .round {
+		width: 13px;
+		height: 12px;
+		border-radius: 50%;
+	}
+	.page .full-content .all .header {
+		padding: 2%;
+		position: relative;
+		height: 11vh;
+	}
+	.page .full-content .all .bar {
+		height: 9%;
+	}
+	.page .full-content .all .contact .pp {
+		height: 3.5vh;
+		border-radius: 10px;
+	}
+	.page .full-content .all .contact .infos {
+		height: 3.5vh;
+		width: 85%;
+	}
+	.page .full-content .all .content-main {
+		height: 33vh;
+	}
+	.page .full-content .all .ft-content .footer {
+		height: 7vh;
+	}
+	.page .full-content .all .second-content .search-field {
+		height: 7%;
+		border-radius: 20px;
+	}
+	.page .full-content .all .second-content .content-one {
+		height: 10vh;
+	}
+	.page .full-content .all .second-content .button {
+		height: 8vh;
+		width: 20%;
+	}
+	.page .full-content .all .second-content .content-two {
+		height: 20vh;
+	}
+	.page .full-content .all .ft-content .nav-system {
+		height: 7vh;
+		width: 40%;
 	}
 }
 
