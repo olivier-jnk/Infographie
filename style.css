@@ -445,7 +445,7 @@ h2{
     align-items: center;
 	max-width: 90vw;
 	padding: 4%;
-	gap: 12px;
+	gap: 20px;
 }
 
 .research-inspiration-planning .s-part .block .icon{
@@ -1058,10 +1058,17 @@ h2{
 	.client-collaboration .collaboration .illustration-two .content p .thin {
 		font-size: 1.5vw;
 	}
-
-	.research-inspiration-planning .f-part {
-		gap: 60px;
-		padding: 5% 10% 2% 10%;
+	.client-collaboration .block-one::after {
+		/* right: 50%; */
+		top: 50%;
+		left: -5px;
+		transform: translateX(-50%) rotate(180deg);
+	}
+	.client-collaboration .block-two::after {
+		/* right: 50%; */
+		top: 50%;
+		right: -15px;
+		transform: translateX(-50%);
 	}
 	.client-collaboration p:last-of-type {
 		font-size: 1.7vw;
@@ -1086,6 +1093,67 @@ h2{
 		max-width: 20vw;
 		min-height: 20vh;
     	max-height: 20vh;
+	}
+
+	/* Research inspiration planning -> SECTION */
+
+	/* f-part */
+	.research-inspiration-planning .f-part {
+		gap: 60px;
+		padding: 5% 10% 2% 10%;
+	}
+	
+	/* s-part */
+	.research-inspiration-planning .s-part {
+		gap: 30px;
+		padding: 4% 4% 4% 9%;
+		/* pas propre le padding */
+
+		/* justify-content: flex-end; */
+	}
+	/* .research-inspiration-planning .blocks{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	} */
+	.research-inspiration-planning .s-part .block {
+		background: black;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: 85vw;
+		min-width: 80vw;
+		padding: 2% 2% 2% 0%;
+		gap: 12px;
+		position: relative;
+	}
+	.research-inspiration-planning .s-part .block .text-content {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		margin-left: 13%;
+	}
+	.research-inspiration-planning .s-part .block .text-content p:first-of-type {
+		font-size: 2.5vw;
+	}
+	.research-inspiration-planning .s-part .block .text-content .tip {
+		gap: 3%;
+	}
+	.research-inspiration-planning .s-part .block .text-content .tip p {
+		font-size: 1.9vw;
+	}
+	.research-inspiration-planning .s-part .block .text-content .tip .icon {
+		width: 74px;
+		height: 57px;
+	}
+	.research-inspiration-planning .s-part .block .icon-spe {
+		width: 125px;
+		height: 125px;
+		background-color: black;
+
+		position: absolute;
+		right: 91%;
 	}
 
 	/* DESIGN SECTION */
@@ -1116,9 +1184,36 @@ h2{
 }
 
 /* X-Large */
-/* @media (min-width: 1200px ){
+@media (min-width: 1200px ){
+	.research-inspiration-planning .s-part {
+		gap: 75px;
+		/* gap: 40px; */
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 3% 3% 3% 7%;
+	}
+	.research-inspiration-planning .s-part .block {
+		max-width: 40vw;
+		min-width: 40vw;
+		padding: 1% 1% 1% 0%;
+		max-height: 12vh;
+		min-height: 12vh;
+	}
 
-} */
+	.research-inspiration-planning .s-part .block .icon-spe {
+		width: 132px;
+		height: 132px;
+		background-color: black;
+		position: absolute;
+		right: 87%;
+	}
+	.research-inspiration-planning .s-part .block .text-content p:first-of-type {
+		font-size: 1.5vw;
+	}
+	.research-inspiration-planning .s-part .block .text-content .tip p {
+		font-size: 1vw;
+	}
+}
 
 /* XX-Large */
 /* @media (min-width: 1400px ){
