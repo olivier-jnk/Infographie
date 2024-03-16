@@ -1004,15 +1004,19 @@ h2{
 		font-size: 2vw;
 	}
 
+	.introduction .setting .crayon {
+		min-width: 6vw;
+		max-width: 6vw;
+	}
 	.introduction .btm-content {
 		display: flex;
 		flex-direction: row;
-		padding: 10% 5% 5% 4%;
+		padding: 2% 5% 2% 4%;
 		gap: 15px;
 		justify-content: space-between;
 	}
 	.introduction .btm-content .thumbnail{
-		min-width: 50vw;
+		min-width: 42vw;
 	}
 	.introduction .title {
 		min-width: 10vw;
@@ -1028,17 +1032,28 @@ h2{
 	.introduction .title .rounded-txt p {
 		font-size: 3vw;
 	}
+	.introduction p:last-of-type{
+		font-size: 1.2vw;
+	}
 
 	/* client collaboration 2nd SECTION */
+	.client-collaboration {
+		padding: 2%;
+		gap: 30px;
+	}
+	.client-collaboration h2 {
+		font-size: 3vw;
+	}
 	.client-collaboration .collaboration {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.client-collaboration .illustration img {
-		min-width: 20vw;
+		min-width: 25vw;
 		max-width: 85vw;
 	}
 	.client-collaboration .collaboration .illustration-two .content p {
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 	.client-collaboration .collaboration .illustration-two .content p .thin {
 		font-size: 1.5vw;
@@ -1047,6 +1062,9 @@ h2{
 	.research-inspiration-planning .f-part {
 		gap: 60px;
 		padding: 5% 10% 2% 10%;
+	}
+	.client-collaboration p:last-of-type {
+		font-size: 1.7vw;
 	}
 
 	.design .step-three .blocks {
@@ -1068,6 +1086,32 @@ h2{
 		max-width: 20vw;
 		min-height: 20vh;
     	max-height: 20vh;
+	}
+
+	/* DESIGN SECTION */
+
+	/* step-2 */
+	.step-two {
+		flex-direction: row;
+	}
+	.step-two img:first-of-type{
+		min-width: 40vw;
+		max-width: 40vw;
+	}
+	.step-two .presentation {
+		gap: 20px;
+	}
+	.step-two .tip .icon {
+		width: 100px;
+		height: 65px;
+	}
+	.step-two .tip {
+		margin-left: 25%;
+	}
+
+	/* step-three */
+	.design .step-three {
+		gap: 20px;
 	}
 }
 
