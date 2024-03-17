@@ -637,7 +637,7 @@ h2{
 }
 
 .arrow{
-	background-color: black;
+	background-color: #313637;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -937,6 +937,9 @@ h2{
 	align-items: center;
 	justify-content: center;
 }
+.design .step-three .blocks .black-banderolle{
+	display: none;
+}
 
 .design .step-three .blocks .block{
 	background-color: #9ccc6c;
@@ -1013,7 +1016,7 @@ h2{
 		font-weight: 900;
 		text-transform: uppercase;
 		font-size: 2vw;
-	}
+	};
 
 	.introduction .setting .crayon {
 		min-width: 6vw;
@@ -1108,7 +1111,7 @@ h2{
 		gap: 30px;
 	} */
 	.research-inspiration-planning .s-part .block {
-		background: black;
+		background: #313539;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -1141,21 +1144,29 @@ h2{
 	.research-inspiration-planning .s-part .block .icon-spe {
 		width: 125px;
 		height: 125px;
-		background-color: black;
-
+		background-color: #313539;
 		position: absolute;
 		right: 91%;
 	}
 
 	/* DESIGN SECTION */
 
+	.design h3 {
+		font-size: 1.3vw;
+	}
+
 	/* step-1 */
+	.design .step-one {
+		gap: 30px;
+	}
 	.design .step-three .blocks {
 		display: flex;
 		flex-direction: row;
 		gap: 5%;
 		align-items: center;
-		justify-content: center;
+		/* justify-content: center; */
+		justify-content: space-between;
+		max-width: 80vw;
 	}
 	.design .step-three .blocks .block {
 		background-color: #9ccc6c;
@@ -1163,8 +1174,8 @@ h2{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 4% 4% 3% 4%;
-		gap: 20px;
+		padding: 4% 2% 1% 2%;
+		gap: 30px;
 		min-width: 20vw;
 		max-width: 20vw;
 		min-height: 20vh;
@@ -1182,8 +1193,10 @@ h2{
 		padding: 2%;
 	}
 	.arrow {
-		max-width: 154px;
-		min-width: 293px;
+		/* max-width: 154px;
+		min-width: 293px; */
+		max-width: 130px;
+    	min-width: 180px;
 		max-height: 30px;
 		min-height: 30px;
 		padding: 3%;
@@ -1210,13 +1223,15 @@ h2{
 	/* step-2 */
 	.step-two {
 		flex-direction: row;
+		justify-content: center;
+		padding: 1%;
 	}
 	.step-two img:first-of-type{
-		min-width: 40vw;
-		max-width: 40vw;
+		min-width: 34vw;
+		max-width: 34vw;
 	}
 	.step-two .presentation {
-		gap: 20px;
+		gap: 40px;
 	}
 	.step-two .tip .icon {
 		width: 100px;
@@ -1228,7 +1243,43 @@ h2{
 
 	/* step-three */
 	.design .step-three {
-		gap: 20px;
+		gap: 45px;
+	}
+	.design .step-three .blocks {
+		position: relative;
+	}
+	.design .step-three .blocks .black-banderolle{
+		/* clip-path: polygon(1% 0%, 99% 0%, 100% 42%, 100% 90%, 90% 100%, 76% 90%, 62% 89%, 51% 100%, 42% 90%, 29% 90%, 20% 100%, 8% 90%, 0 90%); */
+		background-color: #313637;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 90%;
+		width: 100%;
+		padding: 1%;
+	}
+	.design .step-three .blocks .black-banderolle::after {
+		content: '';
+    	position: absolute;
+    	left: 13%;
+    	bottom: -20px;
+    	width: 0;
+    	height: 0;
+    	border-left: 15px solid transparent;
+    	border-right: 15px solid transparent;
+    	border-top: 20px solid #313637;
+	}
+	.design .step-three .blocks .black-banderolle::after:nth-of-type(2) {
+		left: 50%;
+	}
+	.design .step-three .blocks .black-banderolle::after:nth-of-type(3) {
+		left: 75%;
+	}
+	.black-banderolle p{
+		color: white;
+		font-size: 2vw;
+		text-transform: uppercase;
 	}
 }
 
@@ -1252,7 +1303,6 @@ h2{
 	.research-inspiration-planning .s-part .block .icon-spe {
 		width: 140px;
 		height: 140px;
-		background-color: black;
 		position: absolute;
 		right: 87%;
 		transition: background-color 0.5s ease;
