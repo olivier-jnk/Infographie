@@ -86,25 +86,18 @@ h2{
 	font-size: 6vw;
 	/* Mettre la roboto-bold */
 }
-/* -> Permet d'éviter la répétition. */
 
-/*bg-cadrillage*/
 .introduction {
 	background-image: linear-gradient(#EDECE1 3px, transparent 2px),
 	linear-gradient(90deg, #EDECE1 3px, transparent 2px);
     background-size: 25px 25px;
 	background-color: #F7F6EB;
-    /* width: 100%; */
-	/* 89% mobile / 100% PC ? */
-
-    /* padding: 20px; */
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	display: flex;
 	flex-direction: column;
-	/* padding: 4%; */
 	padding: 0;
 	gap: 10px;
+	height: 100vh;
 }
 
 .introduction .setting{
@@ -113,11 +106,6 @@ h2{
     position: relative;
     justify-content: flex-end;
 }
-/* .introduction .setting img{
-	min-width: 20vw;
-	max-width: 20vw;
-	position: absolute;
-} */
 
 .introduction .setting .paper{
 	min-width: 40vw;
@@ -136,7 +124,6 @@ h2{
 .introduction .btm-content {
 	display: flex;
 	flex-direction: column;
-	/* row en version tablette/pc */
 	padding: 10% 5% 5% 4%;
 	gap: 15px;
 }
@@ -152,23 +139,14 @@ h2{
 	font-size: 13vw;
     font-weight: 900;
     text-transform: uppercase;
-	/* text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
 }
 
 .introduction .title .w-design-p span{
 	font-weight: 900;
     font-size: 21vw;
 }
-/* faire en sorte que p + span restent bien allignés et prennent la place qu'ils doivent prendre sans dépasser. */
 
 .introduction .title .rounded-txt{
-	/* display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 3%;
-	background-color: #505bb2;
-	border-radius: 5%; */
-
 	background-color: #505bb2;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -176,7 +154,6 @@ h2{
     text-align: center;
     text-decoration: none; 
     display: inline-block;
-
 	transition: background-color 0.5s ease;
     cursor: pointer;
 }
@@ -189,7 +166,6 @@ h2{
 	font-size: 7vw;
 	text-transform: uppercase;
 	font-weight: 800;
-	/* Tout en capital */
 }
 
 /* //Section2// */
@@ -206,7 +182,6 @@ h2{
 
 .client-collaboration h2{
 	font-size: 6vw;
-	/* Passer à la roboto-bold pour un effet de gras plus marqué. -> Ne fonctionne pas je crois. */
 }
 
 .client-collaboration h3{
@@ -218,40 +193,34 @@ h2{
 	display: flex;
     flex-direction: column;
     padding: 4%;
-
 	position: relative;
     border: 2px solid white;
-
-	/* border: solid white; */
-	/* clip-path: polygon(0 0, 90% 0, 90% 40%, 95% 50%, 90% 60%, 90% 100%, 0 100%); */
-	/* background-color: red; */
-	/* clip-path: polygon(0 0, 100% 0, 100% 40%, 110% 50%, 100% 60%, 100% 100%, 0 100%); */
 }
 
 .client-collaboration .block::after{
 	content: '';
     position: absolute;
     top: 50%;
-    right: -10px; /* Ajustez la position de la flèche */
+    right: -10px;
     transform: translateY(-50%);
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 10px solid white; /* Taille et couleur de la flèche */
+    border-left: 10px solid white;
 }
 
 .client-collaboration .block-one::after{
 	bottom: auto;
 	right: 50%;
-	transform: translateX(-50%) rotate(-90deg); /* Rotation de la flèche vers le bas */
+	transform: translateX(-50%) rotate(-90deg);
     top: -15px;
 }
 
 .client-collaboration .block-two::after{
 	top: auto;
 	right: 50%;
-	transform: translateX(-50%) rotate(90deg); /* Rotation de la flèche vers le bas */
+	transform: translateX(-50%) rotate(90deg);
     bottom: -15px;
 }
 
@@ -260,8 +229,6 @@ h2{
 	justify-content: center;
 }
 .client-collaboration .illustration img{
-	/* max-height: 10vh;
-	min-height: 10vh; */
 	min-width: 85vw;
     max-width: 85vw;
 }
@@ -274,10 +241,8 @@ h2{
 .client-collaboration .collaboration{
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
 	align-items: center;
 	gap: 15px;
-	/* max-width: 80vw; */
 	width: 85vw;
 }
 
@@ -294,14 +259,11 @@ h2{
 
 .client-collaboration .collaboration .maj-points .points{
 	display: flex;
-	/* flex-direction: row; */
 	flex-wrap: wrap;
-	/* gap: 10%; */
 	padding: 0;
 }
 
 .client-collaboration .collaboration .maj-points .points .point{
-	/* flex-basis: 50%; */
     box-sizing: border-box;
 	width: 50%;
 	
@@ -310,21 +272,10 @@ h2{
 	gap: 10%;
 	margin-top: 5%;
 	align-items: center;
-	/* justify-content: space-between; */
 }
-
-/* .client-collaboration .collaboration .maj-points .points .point .icon{
-	box-sizing: border-box;
-	width: 50px;
-} */
-
-/* .client-collaboration .collaboration .maj-points .points .point span{
-	font-size: 3vw;
-} */
 
 .client-collaboration .collaboration .maj-points .icon{
 	width: 40px; 
-	/* vh et vw pour responsive */
   	height: 40px;
   	border-radius: 50%; 
 	background-color: #314d58;
@@ -352,7 +303,6 @@ h2{
 	gap: 5%;
 	align-items: center;
 	justify-content: center;
-	/* justify-content: space-between; */
 }
 
 .client-collaboration .collaboration .illustration-two .content p{
@@ -369,7 +319,6 @@ h2{
 	font-weight: 400;
 	text-transform: lowercase;
 	font-size: 4.5vw; 
-	/* attention */
 }
 
 .client-collaboration .collaboration .illustration-two .img-content{
@@ -406,7 +355,6 @@ h2{
 	color: #fff;
 	font-size: 24px;
 	padding: 5% 10%;
-	/* width: 100%; */
 }
 
 .research-inspiration-planning h2{
@@ -429,9 +377,7 @@ h2{
 .research-inspiration-planning .s-part{
 	display: flex;
 	flex-direction: column;
-	/* a changer pour la version pc */
 	gap: 10px;
-	/* width: 100%; */
 	height: 80%;
 	background: #9F83BB;
 	display: flex;
@@ -446,7 +392,6 @@ h2{
 	background: black;
 	display: flex;
 	flex-direction: column;
-	/* row pour la version tablette/pc */
 	justify-content: center;
     align-items: center;
 	max-width: 90vw;
@@ -457,7 +402,6 @@ h2{
 .research-inspiration-planning .s-part .block:hover {
     background-color: rgb(22, 27, 54);
 }
-
 
 .research-inspiration-planning .s-part .block .icon{
 	width: 100px; 
@@ -523,10 +467,6 @@ h2{
 	padding: 4%;
 }
 
-/* .design h2{
-	text-transform: uppercase;
-} */
-
 .design h3{
 	font-weight: 900;
 }
@@ -542,9 +482,9 @@ h2{
 }
 .design .step-one .page-illustration{
 	background: #FECF75;
-	min-width: 40vw;
-	max-width: 60vw;
-	padding: 2%;
+    min-width: 50vw;
+    max-width: 50vw;
+    padding: 2%;
 }
 
 .design .step-one .page-illustration .page{
@@ -564,12 +504,9 @@ h2{
 .design .step-one .page-illustration .page .base .control{
 	display: flex;
 	flex-direction: row;
-	/* gap: 5%; */
 	gap: 3px;
 }
 .design .step-one .page-illustration .page .base .control .round{
-	/* width: 1vw;
-	height: 0.5vh; */
 	width: 4px;
     height: 3px;
 	border-radius: 50%;
@@ -585,9 +522,7 @@ h2{
 }
 .design .step-one .page-illustration .page .base .nav{
 	background: #8C949A ;
-	/* mieux background ou bg-color dans ce cas ? */
 	width: 70%;
-	/* border-radius: 10%; */
 }
 .design .step-one .page-illustration .page .base .cube{
 	background: #758283;
@@ -595,31 +530,26 @@ h2{
 	border-radius: 10%;
 }
 
-.page .full-content{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+.page .full-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     background: white;
-	min-height: 30vh;
-	/* -> LE parametre qui determine la taille moyen de la page. */
+    min-height: 75vh;
 }
 
 .page .full-content .all{
 	display: flex;
 	flex-direction: column;
-	/* -> modifier pour séparer les 2 parties  */
-	/* min-height: 40vh; */
 	padding: 5%;
     width: 90%;
 	gap: 3%;
-	/* ? */
 }
 
 .page .full-content .all .divided{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* gap: 5%; */
 }
 
 .page .full-content .all .header{
@@ -627,12 +557,8 @@ h2{
 	flex-direction: row;
 	justify-content: flex-start;
 	background: #FFD167;
-	/* Pas la bonne couleur */
-
-	height: 7%;
-    /* align-items: center; */
+	height: 12%;
     padding: 6%;
-
 	position: relative;
 }
 
@@ -641,10 +567,12 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10%;
+	padding: 4%;
 	position: absolute;
-	width: 18vw;
-    height: 2vh;
+	min-width: 90px;
+    max-width: 90px;
+    min-height: 60px;
+    max-height: 60px;
 	z-index: 2;
 }
 .arrow p{
@@ -661,12 +589,12 @@ h2{
 
 .page .full-content .all .header .logo{
 	background-color: white;
-	width: 5vw;
+	width: 12vw;
 }
 
 .page .full-content .all .bar{
 	background: grey;
-	height: 6%;
+	height: 8vh;
 }
 
 /* Aside */
@@ -674,25 +602,21 @@ h2{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	/* padding: 5%; */
 	width: 40%;
 }
 
 .page .full-content .all .second-content .search-field{
 	background: #FFD167;
-	width: 100%;
-	height: 10%;
-	border-radius: 5%;
-	display: flex;
+	height: 4vh;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
-
-	position: relative;
+    position: relative;
 }
-
 
 .page .full-content .all .second-content .content-one{
 	background: grey;
-	height: 4vh;
+	height: 10vh;
 }
 
 .page .full-content .all .second-content .social-sharing-buttons{
@@ -700,61 +624,44 @@ h2{
 	gap: 5%;
 	justify-content: space-between;
     align-items: center;
-
 	position: relative;
+}
+.page .full-content .all .second-content .social-sharing-buttons p{
+	width: 50px;
 }
 
 .page .full-content .all .second-content .button{
 	background: #FFD167;
-	height: 2vh;
-	width: 20%;
-	
+    height: 5vh;
+    width: 27%;
 }
-
 
 .page .full-content .all .second-content .content-two{
 	background: grey;
-	height: 3vh;
-	display: flex;
+    height: 17vh;
+    display: flex;
     align-items: center;
 }
 
-/* changement */
 .page .full-content .all .ft-content .nav-system{
 	background: #FFD167;
-    height: 3vh;
+    height: 6vh;
     width: 40%;
     display: flex;
     align-items: center;
     position: relative;
 }
+.page .full-content .all .ft-content .nav-system p{
+	width: 65px;
+}
 
-/* MajContent */
-/* Systeme de aside fonctionne pas, faire un groupe qui regroupe les 2 et faire flexD = row ou réparer le aside */
 .page .full-content .all .contact-information{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	width: 55%;
-	/* display: flex;
-    align-items: center; */
-
 	position: relative;
 }
-
-/* .arroww{
-	position: absolute;
-	left: 0%;
-
-	background-image: url(images/SVG/ArrowRight.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-
-	display: flex;
-	padding: 5%;
-	justify-content: center;
-	align-items: center;
-} */
 
 .page .full-content .all .contact{
 	display: flex;
@@ -764,16 +671,14 @@ h2{
 
 .page .full-content .all .contact .pp{
 	background: #FFD167;
-	height: 2.5vh;
-	border-radius:30%;
-	width: 20%;
-
+    height: 4.5vh;
+    border-radius: 5px;
+    width: 20%;
 }
 
 .page .full-content .all .contact .infos{
 	background: #FFD167;
-	height: 2.5vh;
-	/* border-radius: 30%; */
+	height: 4.5vh;
 	width: 80%;
 	display: flex;
     justify-content: center;
@@ -782,9 +687,8 @@ h2{
 
 .page .full-content .all .content-main{
 	background: #FFD167;
-	height: 80%;
+	height: 29vh;
 	width: 100%;
-
 	position: relative;
 }
 
@@ -796,17 +700,15 @@ h2{
 
 .page .full-content .all .ft-content .footer{
 	background: #FFD167;
-    height: 3vh;
+    height: 6vh;
     width: 55%;
     display: flex;
     align-items: center;
     position: relative;
-	/* Faire en sorte de moins repeter display flex + center (refactoring) */
 }
 
 .page .full-content .scroll{
-	height: 29vh;
-	/* Le mettre à 100% de la taille d'un parent qui ordone la taille de la zone de contenu. */
+	height: 74vh;
 	width: 1vw;
 	padding: 2%;
 	display: flex;
@@ -829,7 +731,6 @@ h2{
 .step-two{
 	display: flex;
 	flex-direction: column;
-	/* row en version tablette/pc */
 	padding: 4%;
 	gap: 10px;
 	width: 85vw;
@@ -838,7 +739,6 @@ h2{
 .step-two .presentation{
 	display: flex;
 	flex-direction: column;
-	/* padding: 4%; */
 	gap: 10px;
 }
 
@@ -848,8 +748,6 @@ h2{
 	padding: 3%;
 }
 .step-two .presentation .steps{
-	/* display: flex; */
-
 	gap: 10px;
     display: flex;
     flex-direction: column;
@@ -858,7 +756,6 @@ h2{
 .step-two .presentation .steps .icons{
 	display: flex;
     justify-content: space-around;
-	/* around ou between mais en tout cas around super bien approprié pour la version grand ecran, combiné avec la meta timeline li 33% */
 }
 .step-two .presentation .steps .timeline{
 	list-style: none;
@@ -964,33 +861,18 @@ h2{
 	overflow: hidden; 
 }
 
-/* .design .step-three .blocks .block .round{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	background-color: #8fbb62;
-	min-width: 5vw;
-	min-height: 5vh;
-} */
-
 .design .step-three .blocks .block .icon img{
 	max-width: 80%;
 	max-height: 80%;
 }
 
-/* Mauvais ordre surement. Le non respect du principe du CSS (cascading-style-sheet) fait que le responsive ne fonctionne Pas. */
-
 /* BreakPoints */
 
 /* X-Small */
-/* @media (max-width: 576px ){
-
-} */
+/* @media (max-width: 576px ){} */
 
 /* Small */
-/* @media (max-width: 768px ){
-
-} */
+/* @media (max-width: 768px ){} */
 
 /* Medium */
 @media (min-width: 768px ){
@@ -1049,6 +931,7 @@ h2{
 	}
 	.introduction p:last-of-type{
 		font-size: 1.2vw;
+		line-height: 1.1;
 	}
 
 	/* client collaboration 2nd SECTION */
@@ -1074,13 +957,11 @@ h2{
 		font-size: 1.5vw;
 	}
 	.client-collaboration .block-one::after {
-		/* right: 50%; */
 		top: 50%;
 		left: -5px;
 		transform: translateX(-50%) rotate(180deg);
 	}
 	.client-collaboration .block-two::after {
-		/* right: 50%; */
 		top: 50%;
 		right: -15px;
 		transform: translateX(-50%);
@@ -1101,15 +982,7 @@ h2{
 	.research-inspiration-planning .s-part {
 		gap: 30px;
 		padding: 4% 4% 4% 9%;
-		/* pas propre le padding */
-
-		/* justify-content: flex-end; */
 	}
-	/* .research-inspiration-planning .blocks{
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	} */
 	.research-inspiration-planning .s-part .block {
 		background: #313539;
 		display: flex;
@@ -1219,6 +1092,22 @@ h2{
 	.page .full-content .all .second-content .content-two {
 		height: 9vh;
 	}
+	.page .full-content .all .second-content .social-sharing-buttons p {
+		width: auto;
+	}
+	.page .full-content .all .ft-content .nav-system p {
+		width: auto;
+	}
+	.design .step-one .page-illustration .page .base .control {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+	}
+	.design .step-one .page-illustration .page .base .control .round {
+		width: 13px;
+		height: 12px;
+		border-radius: 50%;
+	}
 
 	/* step-2 */
 	.step-two {
@@ -1249,14 +1138,13 @@ h2{
 		position: relative;
 	}
 	.design .step-three .blocks .black-banderolle{
-		/* clip-path: polygon(1% 0%, 99% 0%, 100% 42%, 100% 90%, 90% 100%, 76% 90%, 62% 89%, 51% 100%, 42% 90%, 29% 90%, 20% 100%, 8% 90%, 0 90%); */
 		background-color: #313637;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: absolute;
 		bottom: 90%;
-		width: 100%;
+		width: 98%;
 		padding: 1%;
 	}
 	.design .step-three .blocks .black-banderolle::after {
@@ -1321,16 +1209,9 @@ h2{
 	}
 
 	/* Design section */
-	.design .step-one .page-illustration .page .base .control {
-		display: flex;
-		flex-direction: row;
-		/* gap: 5%; */
-		gap: 15px;
-	}
-	.design .step-one .page-illustration .page .base .control .round {
-		width: 13px;
-		height: 12px;
-		border-radius: 50%;
+	
+	.page .full-content .all .header .logo {
+		width: 7vw;
 	}
 	.page .full-content .all .header {
 		padding: 2%;
@@ -1375,6 +1256,4 @@ h2{
 }
 
 /* XX-Large */
-/* @media (min-width: 1400px ){
-
-} */
+/* @media (min-width: 1400px ){} */
