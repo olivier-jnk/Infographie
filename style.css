@@ -97,7 +97,7 @@ h2{
 	flex-direction: column;
 	padding: 0;
 	gap: 10px;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .introduction .setting{
