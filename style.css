@@ -561,6 +561,9 @@ h2{
     padding: 6%;
 	position: relative;
 }
+.page .full-content .all .header:hover {
+    background-color: #c5982e;
+}
 
 .arrow{
 	background-color: #313637;
@@ -596,6 +599,9 @@ h2{
 	background: grey;
 	height: 8vh;
 }
+.page .full-content .all .bar:hover {
+    background-color: rgb(101, 101, 101);
+}
 
 /* Aside */
 .page .full-content .all .second-content{
@@ -613,10 +619,16 @@ h2{
     align-items: center;
     position: relative;
 }
+.page .full-content .all .second-content .search-field:hover {
+    background-color: #c5982e;
+}
 
 .page .full-content .all .second-content .content-one{
 	background: grey;
 	height: 10vh;
+}
+.page .full-content .all .second-content .content-one:hover {
+    background-color: rgb(101, 101, 101);
 }
 
 .page .full-content .all .second-content .social-sharing-buttons{
@@ -626,6 +638,7 @@ h2{
     align-items: center;
 	position: relative;
 }
+
 .page .full-content .all .second-content .social-sharing-buttons p{
 	width: 50px;
 }
@@ -635,6 +648,9 @@ h2{
     height: 5vh;
     width: 27%;
 }
+.page .full-content .all .second-content .button:hover {
+    background-color: #c5982e;
+}
 
 .page .full-content .all .second-content .content-two{
 	background: grey;
@@ -642,6 +658,10 @@ h2{
     display: flex;
     align-items: center;
 }
+.page .full-content .all .second-content .content-two:hover {
+    background-color: rgb(101, 101, 101);
+}
+
 
 .page .full-content .all .ft-content .nav-system{
 	background: #FFD167;
@@ -650,6 +670,9 @@ h2{
     display: flex;
     align-items: center;
     position: relative;
+}
+.page .full-content .all .ft-content .nav-system:hover {
+    background-color: #c5982e;
 }
 .page .full-content .all .ft-content .nav-system p{
 	width: 65px;
@@ -675,6 +698,9 @@ h2{
     border-radius: 5px;
     width: 20%;
 }
+.page .full-content .all .contact .pp:hover {
+    background-color: #c5982e;
+}
 
 .page .full-content .all .contact .infos{
 	background: #FFD167;
@@ -684,12 +710,18 @@ h2{
     justify-content: center;
     align-items: center;
 }
+.page .full-content .all .contact .infos:hover {
+    background-color: #c5982e;
+}
 
 .page .full-content .all .content-main{
 	background: #FFD167;
 	height: 29vh;
 	width: 100%;
 	position: relative;
+}
+.page .full-content .all .content-main:hover {
+    background-color: #c5982e;
 }
 
 .page .full-content .all .ft-content{
@@ -705,6 +737,9 @@ h2{
     display: flex;
     align-items: center;
     position: relative;
+}
+.page .full-content .all .ft-content .footer:hover {
+    background-color: #c5982e;
 }
 
 .page .full-content .scroll{
@@ -725,6 +760,19 @@ h2{
 	height: 30%;
 	background: yellow ;
 }
+
+.page .ctn{
+	transition: background-color 0.5s ease;
+}
+
+/* .page .orange{
+	transition: background-color 0.5s ease;
+	background: red;
+	width: 100vw;
+}
+.page .orange:hover {
+    background-color: #c5982e;
+} */
 
 /* Step-2 */
 
